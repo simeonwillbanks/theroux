@@ -1,10 +1,13 @@
 'use strict';
 
 angular.module('therouxApp')
-  .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
+  .controller('MainCtrl', ['$scope', function ($scope) {
+    $scope.trips = [
+      'los angeles',
+      'barcelona',
+      'cape town',
+      'moscow',
+      'hanoi',
+      'rio de janeiro'
     ];
-  });
+  }]);
