@@ -15,9 +15,25 @@ module.exports = function(config) {
       'app/bower_components/angular-mocks/angular-mocks.js',
       'app/scripts/*.js',
       'app/scripts/**/*.js',
+      'app/templates/*.html',
       'test/mock/**/*.js',
-      'test/spec/**/*.js'
+      'test/spec/**/*.js',
+      {pattern: 'app/images/*.png', included: false, served: true, watched: false}
     ],
+
+    // generate js files from html templates
+    preprocessors:  {
+      'app/templates/*.html': ['ng-html2js']
+    },
+
+    ngHtml2JsPreprocessor: {
+      // strip this from the file path
+      stripPrefix: 'app/',
+
+      // setting this option will create only a single module that contains templates
+      // from all the files, so you can load them all with module('foo')
+      moduleName: 'appTemplates'
+    },
 
     // list of files / patterns to exclude
     exclude: [],
