@@ -5,10 +5,10 @@
 
 ## Development
 ```
-$ brew install npm
+$ brew install npm    # installs node packaged modules
 $ npm install -g yo   # installs yo, grunt, and bower
-$ npm install
-$ bower install
-$ grunt test          # test your app
-$ grunt server        # preview your app
+$ npm install         # installs dependencies to ./node_modules
+$ bower install       # installs dependencies to ./app/bower_components
+$ grunt test          # test theroux app
+$ grunt server        # preview theroux app
 ```
