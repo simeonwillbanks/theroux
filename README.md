@@ -9,7 +9,7 @@ $ brew install npm    # installs node packaged modules
 $ npm install -g yo   # installs yeoman, grunt, and bower
 $ npm install         # installs dependencies to ./node_modules
 $ bower install       # installs dependencies to ./app/bower_components
-$ bundle install      # installs ruby gem dependencies
+$ gem install compass # grunt-contrib-compass requires compass gem
 $ grunt test          # test theroux app
 $ grunt server        # preview theroux app
 ```
